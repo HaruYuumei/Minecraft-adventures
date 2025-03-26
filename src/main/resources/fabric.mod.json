@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "runeorecraft",
+	"version": "${version}",
+	"name": "RuneOreCraft",
+	"description": "This is an attempt to create a new way of mining in minecraft",
+	"authors": [
+		"HaruYuumei"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": " ",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"haru.runeore.RuneOreCraft"
+		],
+		"client": [
+			"haru.runeore.RuneOreCraftClient"
+		],
+		"fabric-datagen": [
+			"haru.runeore.RuneOreCraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"runeorecraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
