@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layzer0": "runeorecraft:item/shard"
+  }
+
+}

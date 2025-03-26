@@ -1,5 +1,6 @@
 package haru.runeore;
 
+import haru.runeore.item.Moditems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -13,6 +14,8 @@ public class RuneOreCraft implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		Moditems.registerModItems();
 
 		LOGGER.info("Hello Fabric world!");
 	}
